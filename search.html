@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./i/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Order Food Online from India's Best Food Delivery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<style>
+    .search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(247, 249, 252);
+  padding: 5px;
+  width: 800px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),
+    -6px -6px 10px rgba(255, 255, 255, 0.7);
+  margin: 10px;
+  position: relative;
+  top: 200px;
+  left: 23%;
+  transition: width 1.5s;
+  z-index: 1;
+  
+
+}
+
+.magnifier {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+.mic-icon {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  transition: width 0.4s;
+  transition-delay: 1s;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  margin: 10px 50px;
+  width: 100%;
+  outline: none;
+  color: rgb(100, 100, 100);
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
+
+.active.search-bar-container {
+  width: 50px;
+}
+
+.active .input {
+  width: 0;
+}
+
+.active .mic-icon {
+  width: 0;
+}
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#" class="navbar-logo">
+                    <img src="./i/logo2.png" alt="Swiggy Logo">
+                <ul class="navbar-links">
+                    <li><i class="fa-solid fa-bag-shopping"></i></i><a href="./corporate.html" class="con1">Swiggy Corporate</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i><a href="./search.html" class="con2">Search</a></li>
+                    <li><i class="fa-solid fa-tag"></i><a href="./offers.html" class="con3">Offers <sup>NEW</sup></a></li>
+                    <li><a href="./help.html" class="con4">Help</a></li>
+                    <li><i class="fa-regular fa-user"></i><a href="./sidebar.html" class="con5">Sign In</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><a href="./cart.html" class="con6">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+
+        <div class="search-bar-container active">
+      <img
+        src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+        alt="magnifier"
+        class="magnifier"
+      />
+      <input type="text" class="input" placeholder="Search ..." />
+      <img
+        src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+        alt="mic-icon"
+        class="mic-icon"
+      />
+    </div>
+       
+        <section class="search1">
+           
+            <section class="menu-list">
+                <h3>Popular Cuisines</h3>
+                <img src="./i/Biryani.avif" alt="">
+                <img src="./i/burger.avif" alt="">
+                <img src="./i/Chinese.avif" alt="">
+                <img src="./i/Rolls1.avif" alt="">
+                <img src="./i/Pizzas.avif" alt="">
+                <img src="./i/Khichdi.avif" alt="">
+                <img src="./i/Noodles.avif" alt="">
+                <img src="./i/Paratha.avif" alt="">
+
+            </section>
+</section>
+        
+
+<script >
+    
+// Search Bar--page search
+const searchBarContainerEl = document.querySelector(".search-bar-container");
+const magnifierEl = document.querySelector(".magnifier");
+magnifierEl.addEventListener("click", () => {
+  searchBarContainerEl.classList.toggle("active");
+});
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+</body>
+</html>
